@@ -1,0 +1,173 @@
+
+#taille {
+    padding: 1%;
+    margin: auto;
+
+    /* From https://css.glass */
+    background: rgba(191, 118, 255, 0.579);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.23);
+}
+#whiteMode ~  .whiteMode_label{
+    background-color: rgb(182, 98, 255);
+}
+#blackMode ~  .blackMode_label{
+    background-color: rgb(103, 2, 191);
+}
+#whiteMode:checked ~  .whiteMode_label {
+    border: 2px solid white;
+    color: black;
+    padding: 1%;
+    background-color: rgb(222, 184, 255);
+}
+#blackMode:checked ~  .blackMode_label {
+    border: 2px solid black;
+    color: black;
+    padding: 1%;
+    background-color: rgb(104, 65, 135);
+}
+
+.boutton_connexion, .boutton_inscription, .boutton_detail, #boutonProduit {
+    background-color: rgb(172, 78, 255);
+}
+.boutton_detail{
+    background-color: rgb(172, 78, 255);
+}
+.boutton_connexion:hover, .boutton_inscription:hover, .boutton_detail:hover, #boutonProduit:hover {
+    background-color: rgb(223, 186, 255);
+}
+
+body {
+    /*background-image: linear-gradient(white, 40%, rgb(1, 205, 254));*/
+    background: rgb(255,255,255);
+}
+nav {
+    /* From https://css.glass */
+    background: rgba(185, 103, 255, 0.27);
+}
+nav > ul > li:hover > a {
+    /* From https://css.glass */
+    background: rgba(243, 119, 255, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.1px);
+    -webkit-backdrop-filter: blur(6.1px);
+    border: 1px solid rgba(1, 205, 254, 0.23);
+}
+nav > ul > li:hover > .sous_catalogue > li {
+    /* From https://css.glass */
+    background: rgba(202, 146, 252, 0.27);
+}
+footer, select {
+    /* From https://css.glass */
+    background: rgba(185, 103, 255, 0.27);
+}
+.cravates:hover, .chemises:hover {
+    /* From https://css.glass */
+    background: rgba(222, 188, 252, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.1px);
+    -webkit-backdrop-filter: blur(6.1px);
+    border: 1px solid rgba(252, 254, 255, 0.23);
+}
+@media screen and (max-width: 900px) {
+    section > img {
+        width: 50%;
+        margin: 30% 0% 25% 0%;
+    }
+    .catalogues {
+        background-color: rgba(173, 78, 255, 0.27);
+    }
+    .menu {
+        background-color: rgba(140, 8, 255, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+    }
+    .menu:hover {
+        background-color: rgba(173, 78, 255, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+    }
+    input[type="checkbox"]:checked ~ .menu:hover {
+        background-color: rgba(156, 43, 255, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+    }
+    input[type="checkbox"]:checked ~ .menu {
+        background-color: rgba(140, 8, 255, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+    }
+    .mini_menu > label > a {
+        background-color: rgba(194, 124, 255, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+    }
+    .mini_menu > label > a:hover {
+        background-color: rgba(211, 160, 255, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+    }
+    .mini_menu > .catalogue_label {
+        background-color: rgba(194, 124, 255, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+    }
+    .catalogue_label:hover {
+        background-color: rgba(211, 160, 255, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+    }
+    .catalogue_input:checked ~ .catalogue_label {
+        background-color: rgba(211, 160, 255, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+    }
+    .sous_catalogue> label > a {
+        background-color: rgba(226, 193, 255, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+    }
+    .sous_catalogue> label > a:hover {
+        background-color: rgba(215, 172, 252, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+    }
+}

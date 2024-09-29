@@ -1,0 +1,190 @@
+
+#taille {
+    padding: 1%;
+    margin: auto;
+
+    /* From https://css.glass */
+    background: rgba(255, 249, 84, 0.579);
+    
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.23);
+}
+#whiteMode ~  .whiteMode_label{
+    color: black;
+    background-color: rgb(255, 250, 99);
+}
+#blackMode ~  .blackMode_label{
+    background-color: rgb(205, 198, 0);
+}
+#whiteMode:checked ~  .whiteMode_label {
+    border: 2px solid white;
+    color: black;
+    padding: 1%;
+    background-color: rgb(255, 252, 179);
+}
+#blackMode:checked ~  .blackMode_label {
+    border: 2px solid black;
+    color: black;
+    padding: 1%;
+    background-color: rgb(98, 96, 35);
+}
+
+.boutton_connexion, .boutton_inscription, .boutton_detail, #boutonProduit {
+    background-color: rgb(255, 249, 69);
+    color: black;
+}
+.boutton_detail{
+    background-color: rgb(255, 249, 69);
+    color: black;
+}
+.boutton_connexion:hover, .boutton_inscription:hover, .boutton_detail:hover, #boutonProduit:hover {
+    background-color: rgb(255, 252, 167);
+}
+
+body {
+    /*background-image: linear-gradient(white, 40%, rgb(1, 205, 254));*/
+    background: rgb(255,255,255);
+}
+nav {
+    /* From https://css.glass */
+    background: rgba(255, 251, 150, 0.27);
+}
+nav > ul > li:hover > a {
+    /* From https://css.glass */
+    background: rgba(255, 247, 4, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.1px);
+    -webkit-backdrop-filter: blur(6.1px);
+    border: 1px solid rgba(1, 205, 254, 0.23);
+    color: black;
+}
+nav > ul > li:hover > .sous_catalogue > li {
+    /* From https://css.glass */
+    background: rgba(249, 244, 103, 0.27);
+}
+footer, select  {
+    /* From https://css.glass */
+    background: rgba(255, 251, 150, 0.27);
+}
+.cravates:hover, .chemises:hover {
+    /* From https://css.glass */
+    background: rgba(251, 248, 168, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.1px);
+    -webkit-backdrop-filter: blur(6.1px);
+    border: 1px solid rgba(252, 254, 255, 0.23);
+    color: black;
+}
+@media screen and (max-width: 900px) {
+    section > img {
+        width: 50%;
+        margin: 30% 0% 25% 0%;
+    }
+    .chemises {
+        background-color: rgba(255, 249, 88, 0.27);
+    }
+    .menu {
+        background-color: rgba(255, 247, 0, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+        color: black;
+    }
+    .menu:hover {
+        background-color: rgba(255, 249, 88, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+        color: black;
+    }
+    input[type="checkbox"]:checked ~ .menu:hover {
+        background-color: rgba(255, 248, 45, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+        color: black;
+    }
+    input[type="checkbox"]:checked ~ .menu {
+        background-color: rgba(255, 249, 88, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+        color: black;
+    }
+    .mini_menu > label > a {
+        background-color: rgba(255, 251, 134, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+        color: black;
+    }
+    .mini_menu > label > a:hover, .catalogue_label {
+        background-color: rgba(255, 252, 171, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+        color: black;
+    }
+    .mini_menu > .catalogue_label {
+        background-color: rgba(255, 251, 134, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+        color: black;
+    }
+    .catalogue_label:hover {
+        background-color: rgba(255, 252, 171, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+        color: black;
+    }
+    .catalogue_input:checked ~ .catalogue_label {
+        background-color: rgba(255, 252, 171, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+        color: black;
+    }
+    .sous_catalogue> label > a {
+        background-color: rgba(254, 252, 195, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+        color: black;
+    }
+    .sous_catalogue> label > a:hover, .chemises {
+        background-color: rgba(255, 251, 142, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+        color: black;
+    }
+}

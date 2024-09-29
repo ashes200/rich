@@ -1,0 +1,190 @@
+
+#taille {
+    padding: 1%;
+    margin: auto;
+
+    /* From https://css.glass */
+    background: rgba(45, 255, 174, 0.579);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.23);
+}
+#whiteMode ~  .whiteMode_label{
+    color: black;
+    background-color: rgb(102, 255, 196);
+}
+#blackMode ~  .blackMode_label{
+    background-color: rgb(0, 122, 76);
+}
+#whiteMode:checked ~  .whiteMode_label {
+    border: 2px solid white;
+    color: black;
+    padding: 1%;
+    background-color: rgb(178, 255, 226);
+}
+#blackMode:checked ~  .blackMode_label {
+    border: 2px solid black;
+    color: black;
+    padding: 1%;
+    background-color: rgb(31, 75, 58);
+}
+
+.boutton_connexion, .boutton_inscription, .boutton_detail, #boutonProduit {
+    background-color: rgb(5, 255, 159);
+    color: black;
+}
+.boutton_detail{
+    background-color: rgb(5, 255, 159);
+    color: black;
+}
+.boutton_connexion:hover, .boutton_inscription:hover, .boutton_detail:hover, #boutonProduit:hover {
+    background-color: rgb(160, 255, 219);
+}
+body {
+    /*background-image: linear-gradient(white, 40%, rgb(1, 205, 254));*/
+    background: rgb(255,255,255);
+}
+nav {
+    /* From https://css.glass */
+    background: rgba(5, 255, 161, 0.27);
+}
+nav > ul > li:hover > a{
+    /* From https://css.glass */
+    background: rgba(0, 252, 155, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.1px);
+    -webkit-backdrop-filter: blur(6.1px);
+    border: 1px solid rgba(1, 205, 254, 0.23);
+    color: black;
+}
+nav > ul > li:hover > .sous_catalogue > li {
+    /* From https://css.glass */
+    background: rgba(102, 255, 196, 0.27);
+}
+footer, select  {
+
+    /* From https://css.glass */
+    background: rgba(5, 255, 161, 0.27);
+}
+.cravates:hover, .chemises:hover {
+    /* From https://css.glass */
+    background: rgba(174, 255, 224, 0.27);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.1px);
+    -webkit-backdrop-filter: blur(6.1px);
+    border: 1px solid rgba(252, 254, 255, 0.23);
+    color: black;
+}
+@media screen and (max-width: 900px) {
+    section > img {
+        width: 50%;
+        margin: 30% 0% 25% 0%;
+    }
+    .cravates {
+        background-color: rgba(85, 255, 190, 0.27);
+    }
+    .menu {
+        background-color: rgba(0, 255, 157, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+        color: black;
+    }
+    .menu:hover {
+        background-color: rgba(85, 255, 190, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+        color: black;
+    }
+    input[type="checkbox"]:checked ~ .menu:hover {
+        background-color: rgba(44, 255, 174, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+        color: black;
+    }
+    input[type="checkbox"]:checked ~ .menu {
+        background-color: rgba(85, 255, 190, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+        color: black;
+    }
+    .mini_menu > label > a {
+        background-color: rgba(122, 255, 204, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+        color: black;
+    }
+    .mini_menu > label > a:hover, .catalogue_label {
+        background-color: rgba(162, 255, 219, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+        color: black;
+    }
+    .mini_menu > .catalogue_label {
+        background-color: rgba(122, 255, 204, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+        color: black;
+    }
+    .catalogue_label:hover {
+        background-color: rgba(162, 255, 219, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+        color: black;
+    }
+    .catalogue_input:checked ~ .catalogue_label {
+        background-color: rgba(162, 255, 219, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+        color: black;
+    }
+    .sous_catalogue> label > a {
+        background-color: rgba(202, 255, 235, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+        color: black;
+    }
+    .sous_catalogue> label > a:hover, .cravates {
+        background-color: rgba(137, 255, 210, 0.27);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.1px);
+        -webkit-backdrop-filter: blur(6.1px);
+        border: 1px solid rgba(1, 205, 254, 0.23);
+        color: black;
+        
+    }
+}

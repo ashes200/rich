@@ -1,0 +1,598 @@
+/*style pour le menu grand format*/
+body {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+input[type="checkbox"], .menu, .mini_menu {
+    display: none;
+}
+section  {
+    margin-top: 5%;
+ }
+/*les styles de la barre de navigation/menu*/
+nav {
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    width: 70%;
+    margin-left: 15%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.1px);
+    -webkit-backdrop-filter: blur(6.1px);
+    border: 1px solid rgba(1, 205, 254, 0.23);
+    color: black;
+}
+nav > ul {
+    flex: 9;
+    margin: 0px;
+    padding: 0px;
+    height: 70px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > ul > li {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    float: left;
+    border: none;
+    flex: 1;
+}
+#meteo{
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#meteo div {
+    margin: 0px;
+    padding: 0px;
+    flex: 1;
+}
+#meteo p {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+#meteo img {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+nav > ul > li > a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    margin: 0px;
+    padding: 22px 60px 25px 60px;
+    border: none;
+}
+.connexion2 {
+    padding: 0px;
+}
+nav > ul > li > a > img {
+    width: 37%;
+    margin: 0px;
+    padding: 0px;
+}
+nav > ul > li:hover > a > img {
+    width: 40%;
+}
+nav > ul > li:hover > a {
+    color: white;
+    font-weight: bold;
+    
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.1px);
+    -webkit-backdrop-filter: blur(6.1px);
+    border: 1px solid rgba(1, 205, 254, 0.23);
+    color: black;
+    
+}
+
+.errorConnection{
+    display: block;
+}
+/*les style pour le logo dans le nav bar*/
+.logo {
+    flex: 1;
+}
+.logo > a{
+    display: block;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    cursor: pointer;
+}
+.logo  img {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+    /*les styles pour le sous menu*/
+.sous_catalogue {
+    display: none;
+}
+nav > ul > li:hover > .sous_catalogue {
+    display: block;
+    z-index: 50;
+    padding: 0px;
+}
+nav > ul > li:hover > .sous_catalogue > li {
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.1px);
+    -webkit-backdrop-filter: blur(6.1px);
+    border: 1px solid rgba(252, 254, 255, 0.23);
+    color: black;
+}
+
+.sous_catalogue > li > a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    border-radius: 16px;
+    padding: 10px 40px 5px 40px;
+}
+.sous_catalogue > li {
+    list-style-type: none;
+}
+.cravates:hover, .chemises:hover {
+    color: white;
+    
+}
+.errorConnection, .errorInscription, .errorDetail{
+    border: 2px solid red;
+    color: rgb(255, 0, 0);
+    padding: 1% 0%;
+}
+    /*les styles pour la fenetre de connexion*/
+.connexion_onglet, .inscription_onglet, .detail_onglet {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 300;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+.connexion_form, .inscription_form, .detail_form {
+    display: inline-block;
+    margin: 4% auto;
+    width: 40%;
+    padding: 0px 50px;
+
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.23);
+
+    -webkit-animation-name: animatezoom;
+    -webkit-animation-duration: 0.6s;
+
+    -moz-animation-name: animatezoom;
+    -moz-animation-duration: 0.6s;
+
+    -o-animation-name: animatezoom;
+    -o-animation-duration: 0.6s;
+
+    animation-name: animatezoom;
+    animation-duration: 0.6s;
+}
+    /* l'animation/zoom que fait la fenetre en s'ouvrant */
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0);}
+    to {-webkit-transform: scale(1);}
+}
+
+@-moz-keyframes animatezoom {
+    from {-moz-transform: scale(0);}
+    to {-moz-transform: scale(1);}
+}
+
+@-o-keyframes animatezoom {
+    from {-o-transform: scale(0);}
+    to {-o-transform: scale(1);}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
+.formulaire_connexion > input, .formulaire_inscription > input, .formulaire_detail > input, .deconnextion {
+    display: block;
+    margin: 0px auto;
+    width: 99%;
+    height: 60px;
+    text-align: center;
+}
+.infolettreDiv {
+    width: 100%;
+    display: inline-block;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.infolettreDiv > input {
+    flex: 1;
+    border: 2px solid red;
+    display: block;
+}
+.infolettreDiv > label{
+    flex: 12;
+    font-weight: bold;
+    font-size: 17px;
+    text-align: left;
+}
+.inscription_form h2 {
+    margin: 5% auto;
+    font-size: 35px;
+}
+.displayDiv {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.displayDiv input[type="radio"]{
+    display: none;
+}
+.displayDiv label{
+    flex: 1;
+    margin: 1%;
+    padding: 2% 0%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.formulaire_connexion > label, .formulaire_inscription > label, .formulaire_detail > label {
+    display: inline-block;
+    margin: 0% auto;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+}
+
+    /* les styles de l'avatar */
+.avatar {
+    margin: 50px auto;
+    padding: 0px;
+    text-align: center;
+}
+.image_avatar {
+    display: inline;
+    border-radius: 50%;
+}
+/* le style de l'icone fermer */
+.fermer {
+    font-size: 40px;
+    float: right;
+    cursor: pointer;
+}
+.fermer:hover {
+    color: rgb(255, 64, 64);
+}
+
+    /* les styles des boutton */
+.boutton_connexion, .boutton_inscription, .boutton_detail {
+    border: 2px solid gray;
+    display: block;
+    margin-right: 5%;
+    flex: 1;
+    height: 60px;
+    text-align: center;
+    float: left;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+ }
+
+ .buttonConnection, .buttonInscription, .buttonDetail{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .boutton_connexion:hover, .boutton_inscription:hover, .boutton_detail:hover {
+    color: black;
+ }
+
+.annulerConnection, .annulerInscription, .deConnection {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    flex: 1;
+    margin-left: 5%;
+    padding: 15px 25px;
+    float: right;
+    height: 60px;
+    background-color: red;
+    cursor: pointer;
+    float: left;
+}
+.annulerConnection:hover, .annulerInscription:hover, .deConnection:hover {
+    color: black;
+    background-color: rgb(248, 96, 96);
+}
+.forget {
+    float: left;
+    margin: 0% 0% 5% 0%;
+}
+.new {
+    float: right;
+    margin: 0% 0% 5% 0%;
+}
+.forget > a, .new > a {
+    text-decoration: none;
+    color: black;
+}
+.forget > a:hover, .new > a:hover {
+    color: red;
+}
+/* les style du footer */
+
+footer {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    width: 99%;
+    margin: auto;
+    /*border: 2px solid black;*/
+    display: block;
+
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.1px);
+    -webkit-backdrop-filter: blur(6.1px);
+    border: 1px solid rgba(1, 205, 254, 0.23);
+}
+footer > p {
+    font-weight: bold;
+    margin: 0px;
+}
+.liens {
+    margin-top: 0px;
+}
+.liens > a {
+    display: inline-block;
+}
+footer ul {
+    margin: 0% 0% 1% 0%;
+    padding: 0px;
+    display: block;
+}
+
+footer > ul > li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0% 1%;
+    padding: 0px;
+}
+footer > ul > li > a {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    margin: 0px;
+}
+footer > ul > li > a:hover{
+    color: white;
+}
+
+/* style pour le lecteur de musique*/
+.musiq {
+    display: inline-block;
+    margin-bottom: 1%;
+    padding: 0%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+audio {
+    flex: 1;
+    display: block;
+    float: right;
+    margin: 0% 25% 0% 5%;
+    height: 7vh;
+}
+select {
+    flex: 1;
+    display: block;
+    margin: 0% 5% 0% 25%;
+    margin-top: 1%;
+    height: 7vh;
+    font-weight: bold;
+    text-align: center;
+
+
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.1px);
+    -webkit-backdrop-filter: blur(6.1px);
+    border: 1px solid rgba(1, 205, 254, 0.23);
+}
+option {
+    font-size: 1.3em;
+}
+
+/*style pour le menu petit format*/
+@media screen and (max-width: 900px) {
+    section  {
+        margin-top: 11%;
+     }
+    nav, .sous_catalogue, input[type="checkbox"], .mini_menu {
+        display: none;
+    }
+        /*les styles pour la barre de navigation/menu*/
+    .menu {
+        display: block;
+        border-top: 4px solid white;
+        border-bottom: 4px solid white;
+        text-align: center;
+        width: 100%;
+        padding: 10px 0px 15px 0px;
+        font-size: 40px;
+        font-weight: bold;
+
+        z-index: 50;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .menu:hover {
+        color: white;
+    }
+    input[type="checkbox"]:checked ~ .menu:hover {   
+        cursor: pointer;
+        color: black;
+    }
+    input[type="checkbox"]:checked ~ .menu {
+        color: white;
+    }
+        /*les styles pour les onglets du menu*/
+    input[type="checkbox"]:checked ~ .mini_menu {
+        display: block;
+    }
+    .mini_menu {
+        width: 100%;
+        position: fixed;
+        top: 8.8%;
+        z-index: 50;
+    }
+    .mini_menu > label {
+        display: block;
+    }
+    .mini_menu > label > a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        border-bottom: 4px solid white;
+        text-align: center;
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .mini_menu > label > a:hover {
+        color: white;
+    }
+        /*les styles des onglets : societe et formation du menu*/
+    .mini_menu > .catalogue_label {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        border-bottom: 4px solid white;
+        text-align: center;
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .catalogue_label:hover {
+        color: white;
+    }
+    .catalogue_input:checked ~ .catalogue_label {
+        color: white;
+        color: rgb(249, 5, 5);
+    }
+        /*les styles des sous-menu des onglets : societe et formation*/
+    .catalogue_input:checked ~ .sous_catalogue{
+        display: block;
+    }
+    .sous_catalogue > label {
+        display: block;
+    }
+    .sous_catalogue> label > a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        border-bottom: 4px solid white;
+        text-align: center;
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .sous_catalogue> label > a:hover {
+        color: white;
+    }
+    /*les styles pour la fenetre de connexion*/
+    .connexion_form, .inscription_form, .detail_form {
+        width: 50%;;
+    }
+    .infolettreDiv > input {
+        display: block;
+    }
+    #meteo2{
+        margin: 0px;
+        padding: 0px;
+        display: block;
+
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    #meteo2 div {
+        flex: 1;
+        margin: 0px;
+        padding: 0px;
+        display: inline-block;
+    }
+    #meteo2 p {
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+    }
+    #meteo2 img {
+        margin: 0px;
+        padding: 0px;
+        width: 15%;
+        float: left;
+    }
+    .connexion2 > img {
+        width: 8%;
+        margin: 0px;
+    }
+    .connexion2:hover > img {
+        width: 10%;
+    }
+    .mini_menu > label > .connexion2 {
+        margin: 0px;
+        padding: 0px;
+    }
+}
